@@ -13,7 +13,7 @@ testet for 10.9
 
 # Networking
 
-## SMB
+## SMB (samba)
 This will speedup smb (samba) connections.
 write a file with:
 
