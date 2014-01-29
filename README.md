@@ -1,7 +1,7 @@
 osx-trix
 ========
 
-Patches, Fixes and Tricks for Apples OS X Platform
+Compilation of Patches, Fixes and Tricks for Apples OS X Platform
 
 # Finder
 ## show 'Quit' in the Menubar
