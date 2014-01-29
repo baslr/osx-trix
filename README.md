@@ -14,8 +14,7 @@ testet for 10.9
 # Networking
 
 ## SMB (samba)
-This will speedup smb (samba) connections.
-write a file with:
+This will speedup smb (samba) connections. Write a file with:
 
 ```
 [default]
