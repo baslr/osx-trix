@@ -22,21 +22,21 @@ This will enable CMD + Q and in the menubar Finder -> Quit Finder
 
     $ defaults write com.apple.Finder QuitMenuItem 1
 
-testet for 10.9
+tested for 10.9
 
 ## show full POSIX Path in title
 This will enable the full POSIX path in any Finder menu.
 
     $ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
     
-testet for 10.7 - 10.9
+tested for 10.7 - 10.9
 
 ## prevent .DS_Store file creation over network connections
 This will prevent the Finder from creating .DS_Store over network connections.
 
     $ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
     
-testet for 10.4 - 10.9
+tested for 10.4 - 10.9
 
 
 # Networking
@@ -59,7 +59,7 @@ to
 /private/etc/nsmb.conf
 ```
 
-testet for 10.9
+tested for 10.9
 
 ## throttle TCP/IP Port throughput
 * (src|dst) means src-port xor dst-port
@@ -70,7 +70,7 @@ testet for 10.9
 # ipfw add 1 pipe 1 (src|dst)-port {port}
 # ipfw delete 1
 ```
-testet for 10.8 - 10.9
+tested for 10.8 - 10.9
 
 ## disable delayed tcp ack
 Source: <http://www.jeremycole.com/blog/2010/01/13/delayed-ack-in-os-x-is-incomprehensible/>
@@ -98,9 +98,9 @@ only necessary for 10.9
 
 ## disable Mission Control animation
 This disables the swoosh animation when you start Mission Control.
-
-    $ defaults write com.apple.dock expose-animation-duration -float 0
-
+```
+$ defaults write com.apple.dock expose-animation-duration -float 0
+```
 
 # Useful Apps
 
@@ -108,6 +108,7 @@ This disables the swoosh animation when you start Mission Control.
 
 ## buildin http server
 source: <http://osxdaily.com/2010/05/07/create-an-instant-web-server-via-terminal-command-line/>
+
 just run
 ```
 $ python -m SimpleHTTPServer 4104
