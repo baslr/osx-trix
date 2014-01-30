@@ -41,9 +41,18 @@ port445=no_netbios
 ```
 
 to
-
-    /private/etc/nsmb.conf
+```
+/private/etc/nsmb.conf
+```
 
 testet for 10.9
 
+## throttle TCP/IP Port throughput
+* (src|dst) means src-port xor dst-port
+* replace {port} with the port number you want to throttle
 
+```
+# ipfw pipe 1 config bw 500KByte/s
+# ipfw add 1 pipe 1 (src|dst)-port {port}
+# ipfw delete 1
+```
