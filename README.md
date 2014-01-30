@@ -40,6 +40,7 @@ testet for 10.4 - 10.9
 # Networking
 
 ## SMB (samba)
+### speedup connection
 This will speedup smb (samba) connections. Write a file (as root) with:
 
 ```
