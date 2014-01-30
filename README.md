@@ -26,9 +26,20 @@ tested for 10.9
 ## show hidden files in Finder
 This wil show all files in the Finder.
 
-    $ defaults write com.apple.finder AppleShowAllFiles TRUE
+```
+$ defaults write com.apple.finder AppleShowAllFiles TRUE
+```
 
 tested for 10.4 - 10.9
+
+## show a specific hidden file/directory in Finder
+This will show a specific file/directory in the Finder. e.g. The directory ~/Library/.
+
+```
+$ chflags nohidden ~/Library/
+```
+
+necessary since 10.7
 
 ## show full POSIX Path in title
 This will enable the full POSIX path in any Finder menu.
