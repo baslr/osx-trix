@@ -18,6 +18,14 @@ This will enable the full POSIX path in any Finder menu.
     
 testet for 10.7 - 10.9
 
+## prevent .DS_Store file creation over network connections
+This will prevent the Finder from creating .DS_Store over network connections.
+
+    $ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+    
+testet for 10.4 - 10.9
+
+
 # Networking
 
 ## SMB (samba)
