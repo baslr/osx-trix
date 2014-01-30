@@ -75,3 +75,19 @@ Source: <http://www.jeremycole.com/blog/2010/01/13/delayed-ack-in-os-x-is-incomp
 ```
 # echo 'sysctl -w net.inet.tcp.delayed_ack=0' >> /etc/sysctl.conf
 ```
+
+# Editing Apple-Apps
+
+## codesign
+As soon as you edit any .plist etc. in an original Apple-App it crashes after editing the .plist, because every App is signed by Apple. To sign the edited App (e.g *Boot Camp Assistant*) get root and type:
+
+    $ sudo codesign -fs - /Applications/Utilities/Boot\ Camp\ Assistant.app
+
+only necessary for 10.9
+
+## Make BootCamp Assistant create a bootable USB-drive on Mac's with optical drive.
+1. Edit the info.plist located in: */Applications/Utilities/Boot Camp Assistant.app/Contents*.
+2. Search for the string *<key>PreESDRequiredModels</key>* and paste your Model Identifier e.g. *<string>MacBookPro7,2</string>* (You can find the Identifier in Mactracker or by left clicking the Apple while holding down the "alt" Key and clicking "Systeminformation")
+3. Copy your Boot-Rom-Version form the System-Profiler, which you start by left clicking the Apple while holding down the "alt" Key and clicking "Systeminformation" and paste it in the info.plist at *<key>DARequiredROMVersions</key>*
+4. To make your Mac boot from USB just delete the "Pre" from *<key>PreUSBBootSupportedModels</key>* and add your Model Identifier
+5. Codesign your BootCamp Assistant
