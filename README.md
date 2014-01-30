@@ -87,7 +87,14 @@ only necessary for 10.9
 
 ## Make BootCamp Assistant create a bootable USB-drive on Mac's with optical drive.
 1. Edit the info.plist located in: */Applications/Utilities/Boot Camp Assistant.app/Contents*.
-2. Search for the string *<key>PreESDRequiredModels</key>* and paste your Model Identifier e.g. *<string>MacBookPro7,2</string>* (You can find the Identifier in Mactracker or by left clicking the Apple while holding down the "alt" Key and clicking "Systeminformation")
-3. Copy your Boot-Rom-Version form the System-Profiler, which you start by left clicking the Apple while holding down the "alt" Key and clicking "Systeminformation" and paste it in the info.plist at *<key>DARequiredROMVersions</key>*
+2. Search for the string *<key>PreESDRequiredModels</key>* and paste your Model Identifier e.g. *<string>MacBookPro7,2</string>* (You can find the Identifier in Mactracker or by left clicking the -Menu while holding down the "alt" Key and clicking "Systeminformation")
+3. Copy your Boot-Rom-Version form the System-Profiler, which you start by left clicking the -Menu while holding down the "alt" Key and clicking "Systeminformation" and paste it in the info.plist at *<key>DARequiredROMVersions</key>*
 4. To make your Mac boot from USB just delete the "Pre" from *<key>PreUSBBootSupportedModels</key>* and add your Model Identifier
 5. Codesign your BootCamp Assistant
+
+# Animations
+
+## disable Mission Control animation
+This disables the swoosh animation when you start Mission Control.
+
+    $ defaults write com.apple.dock expose-animation-duration -float 0
