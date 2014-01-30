@@ -105,3 +105,11 @@ This disables the swoosh animation when you start Mission Control.
 # Useful Apps
 
 ## flux
+
+## buildin http server
+source: <http://osxdaily.com/2010/05/07/create-an-instant-web-server-via-terminal-command-line/>
+just run
+```
+$ python -m SimpleHTTPServer 4104
+```
+in your terminal. It will serve the files and directories in the current directory.
