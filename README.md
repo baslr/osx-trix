@@ -15,26 +15,34 @@ means your normal user account.
 means your root account.
 
 # Finder
+After any change you made here you have to type *killall Finder*
 ## show 'Quit' in the Menubar
 This will enable CMD + Q and in the menubar Finder -> Quit Finder
 
     $ defaults write com.apple.Finder QuitMenuItem 1
 
-testet for 10.9
+tested for 10.9
+
+## show hidden files in Finder
+This wil show all files in the Finder.
+
+    $ defaults write com.apple.finder AppleShowAllFiles TRUE
+
+tested for 10.4 - 10.9
 
 ## show full POSIX Path in title
 This will enable the full POSIX path in any Finder menu.
 
     $ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
     
-testet for 10.7 - 10.9
+tested for 10.7 - 10.9
 
 ## prevent .DS_Store file creation over network connections
 This will prevent the Finder from creating .DS_Store over network connections.
 
     $ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
     
-testet for 10.4 - 10.9
+tested for 10.4 - 10.9
 
 
 # Networking
@@ -68,7 +76,7 @@ testet for 10.9
 # ipfw add 1 pipe 1 (src|dst)-port {port}
 # ipfw delete 1
 ```
-testet for 10.8 - 10.9
+tested for 10.8 - 10.9
 
 ## disable delayed tcp ack
 Source: <http://www.jeremycole.com/blog/2010/01/13/delayed-ack-in-os-x-is-incomprehensible/>
@@ -85,7 +93,7 @@ As soon as you edit any .plist etc. in an original Apple-App it crashes after ed
 
 only necessary for 10.9
 
-## Make BootCamp Assistant create a bootable USB-drive on Mac's with optical drive.
+## Make BootCamp Assistant create a bootable USB-drive on Mac's with optical drive
 Source: https://www.youtube.com/watch?v=5A5FG8EMEGc
 
 1. Edit the info.plist located in: */Applications/Utilities/Boot Camp Assistant.app/Contents*.
