@@ -125,8 +125,15 @@ $ defaults write com.apple.dock expose-animation-duration -float 0
 $ killall Dock
 ```
 
-# Useful Apps
+# Useful Apps (free)
 ## flux
+Changes the kelvin-temperature of your display when the sun goes down.
+
+## img2icns
+Transforms images to icons.
+
+## TextMate
+Improved text displaying with syntax highlighting. It's the Notepad++ equal for OS X.
 
 ## buildin http server
 source: <http://osxdaily.com/2010/05/07/create-an-instant-web-server-via-terminal-command-line/>
