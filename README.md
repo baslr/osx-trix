@@ -101,3 +101,12 @@ This disables the swoosh animation when you start Mission Control.
 
     $ defaults write com.apple.dock expose-animation-duration -float 0
     $ killall Dock
+
+# Peripherals
+
+## Make the SuperDrive work on any Mac
+Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jedem-mac-verwenden
+
+1. Copy the file */Library/Preferences/SystemConfiguration/com.apple.Boot.plist* to your desktop and open it with TextEdit.
+2. paste "mbasd=1" bewteen *<string>* and *</string>*. Save the document and paste it into */Library/Preferences/SystemConfiguration/* replace the old file. Root is needed.
+3. Restart your Mac.
