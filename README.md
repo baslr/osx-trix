@@ -91,3 +91,10 @@ only necessary for 10.9
 3. Copy your Boot-Rom-Version form the System-Profiler, which you start by left clicking the Apple while holding down the "alt" Key and clicking "Systeminformation" and paste it in the info.plist at *<key>DARequiredROMVersions</key>*
 4. To make your Mac boot from USB just delete the "Pre" from *<key>PreUSBBootSupportedModels</key>* and add your Model Identifier
 5. Codesign your BootCamp Assistant
+
+# Animations
+
+## disable Mission Control animation
+This disables the swoosh animation when you start Mission Control.
+
+    $ defaults write com.apple.dock expose-animation-duration -float 0
