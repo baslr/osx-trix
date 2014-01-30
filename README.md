@@ -81,7 +81,7 @@ Source: <http://www.jeremycole.com/blog/2010/01/13/delayed-ack-in-os-x-is-incomp
 ## codesign
 As soon as you edit any .plist etc. in an original Apple-App it crashes after editing the .plist, because every App is signed by Apple. To sign the edited App (e.g *Boot Camp Assistant*) get root and type:
 
-    $ sudo codesign -fs - /Applications/Utilities/Boot\ Camp\ Assistant.app
+    # codesign -fs - /Applications/Utilities/Boot\ Camp\ Assistant.app
 
 only necessary for 10.9
 
