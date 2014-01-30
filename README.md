@@ -11,6 +11,13 @@ This will enable CMD + Q and in the menubar Finder -> Quit Finder
 
 testet for 10.9
 
+## show full POSIX Path in title
+This will enable the full POSIX path in any Finder menu.
+
+    $ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+    
+testet for 10.7 - 10.9
+
 # Networking
 
 ## SMB (samba)
@@ -30,3 +37,5 @@ to
     /private/etc/nsmb.conf
 
 testet for 10.9
+
+
