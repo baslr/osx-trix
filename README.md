@@ -17,12 +17,31 @@ means your normal user account.
 means your root account.
 
 # Finder
+After any change you made here you have to type *killall Finder*
 ## show 'Quit' in the Menubar
 This will enable CMD + Q and in the menubar Finder -> Quit Finder
 
     $ defaults write com.apple.Finder QuitMenuItem 1
 
 tested for 10.9
+
+## show hidden files in Finder
+This wil show all files in the Finder.
+
+```
+$ defaults write com.apple.finder AppleShowAllFiles TRUE
+```
+
+tested for 10.4 - 10.9
+
+## show a specific hidden file/directory in Finder
+This will show a specific file/directory in the Finder. e.g. The directory ~/Library/.
+
+```
+$ chflags nohidden ~/Library/
+```
+
+necessary since 10.7
 
 ## show full POSIX Path in title
 This will enable the full POSIX path in any Finder menu.
@@ -55,6 +74,7 @@ port445=no_netbios
 ```
 
 to
+
 ```
 /private/etc/nsmb.conf
 ```
@@ -87,7 +107,9 @@ As soon as you edit any .plist etc. in an original Apple-App it crashes after ed
 
 only necessary for 10.9
 
-## Make BootCamp Assistant create a bootable USB-drive on Mac's with optical drive.
+## Make BootCamp Assistant create a bootable USB-drive on Mac's with optical drive
+Source: https://www.youtube.com/watch?v=5A5FG8EMEGc
+
 1. Edit the info.plist located in: */Applications/Utilities/Boot Camp Assistant.app/Contents*.
 2. Search for the string *<key>PreESDRequiredModels</key>* and paste your Model Identifier e.g. *<string>MacBookPro7,2</string>* (You can find the Identifier in Mactracker or by left clicking the -Menu while holding down the "alt" Key and clicking "Systeminformation")
 3. Copy your Boot-Rom-Version form the System-Profiler, which you start by left clicking the -Menu while holding down the "alt" Key and clicking "Systeminformation" and paste it in the info.plist at *<key>DARequiredROMVersions</key>*
@@ -100,10 +122,10 @@ only necessary for 10.9
 This disables the swoosh animation when you start Mission Control.
 ```
 $ defaults write com.apple.dock expose-animation-duration -float 0
+$ killall Dock
 ```
 
 # Useful Apps
-
 ## flux
 
 ## buildin http server
@@ -114,3 +136,12 @@ just run
 $ python -m SimpleHTTPServer 4104
 ```
 in your terminal. It will serve the files and directories in the current directory.
+
+
+# Peripherals
+## Make the SuperDrive work on any Mac
+Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jedem-mac-verwenden
+
+1. Copy the file */Library/Preferences/SystemConfiguration/com.apple.Boot.plist* to your desktop and open it with TextEdit.
+2. paste "mbasd=1" bewteen *&lt;string&gt;* and *&lt;/string&gt;*. Save the document and paste it into */Library/Preferences/SystemConfiguration/* replace the old file. Root is needed.
+3. Restart your Mac.
