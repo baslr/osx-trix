@@ -108,5 +108,5 @@ This disables the swoosh animation when you start Mission Control.
 Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jedem-mac-verwenden
 
 1. Copy the file */Library/Preferences/SystemConfiguration/com.apple.Boot.plist* to your desktop and open it with TextEdit.
-2. paste "mbasd=1" bewteen *&lt;string&gt;* and *</string>*. Save the document and paste it into */Library/Preferences/SystemConfiguration/* replace the old file. Root is needed.
+2. paste "mbasd=1" bewteen *&lt;string&gt;* and *&lt;/string&gt;*. Save the document and paste it into */Library/Preferences/SystemConfiguration/* replace the old file. Root is needed.
 3. Restart your Mac.
