@@ -100,3 +100,8 @@ only necessary for 10.9
 This disables the swoosh animation when you start Mission Control.
 
     $ defaults write com.apple.dock expose-animation-duration -float 0
+
+
+# Useful Apps
+
+## flux
