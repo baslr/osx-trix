@@ -86,6 +86,8 @@ As soon as you edit any .plist etc. in an original Apple-App it crashes after ed
 only necessary for 10.9
 
 ## Make BootCamp Assistant create a bootable USB-drive on Mac's with optical drive.
+Source: https://www.youtube.com/watch?v=5A5FG8EMEGc
+
 1. Edit the info.plist located in: */Applications/Utilities/Boot Camp Assistant.app/Contents*.
 2. Search for the string *<key>PreESDRequiredModels</key>* and paste your Model Identifier e.g. *<string>MacBookPro7,2</string>* (You can find the Identifier in Mactracker or by left clicking the -Menu while holding down the "alt" Key and clicking "Systeminformation")
 3. Copy your Boot-Rom-Version form the System-Profiler, which you start by left clicking the -Menu while holding down the "alt" Key and clicking "Systeminformation" and paste it in the info.plist at *<key>DARequiredROMVersions</key>*
