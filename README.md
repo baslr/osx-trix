@@ -3,6 +3,17 @@ osx-trix
 
 Compilation of Patches, Fixes and Tricks for Apples OS X Platform
 
+# Notes
+```
+$
+```
+means your normal user account.
+
+```
+#
+```
+means your root account.
+
 # Finder
 ## show 'Quit' in the Menubar
 This will enable CMD + Q and in the menubar Finder -> Quit Finder
