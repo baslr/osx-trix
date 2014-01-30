@@ -56,3 +56,4 @@ testet for 10.9
 # ipfw add 1 pipe 1 (src|dst)-port {port}
 # ipfw delete 1
 ```
+teste for 10.8 - 10.9
