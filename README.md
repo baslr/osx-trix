@@ -1,7 +1,9 @@
 osx-trix
 ========
 
-Compilation of Patches, Fixes and Tricks for Apples OS X Platform
+Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform.
+
+**Pull Requests are welcome.**
 
 # Notes
 ```
@@ -72,11 +74,12 @@ port445=no_netbios
 ```
 
 to
+
 ```
 /private/etc/nsmb.conf
 ```
 
-testet for 10.9
+tested for 10.9
 
 ## throttle TCP/IP Port throughput
 * (src|dst) means src-port xor dst-port
@@ -100,7 +103,7 @@ Source: <http://www.jeremycole.com/blog/2010/01/13/delayed-ack-in-os-x-is-incomp
 ## codesign
 As soon as you edit any .plist etc. in an original Apple-App it crashes after editing the .plist, because every App is signed by Apple. To sign the edited App (e.g *Boot Camp Assistant*) get root and type:
 
-    $ sudo codesign -fs - /Applications/Utilities/Boot\ Camp\ Assistant.app
+    # codesign -fs - /Applications/Utilities/Boot\ Camp\ Assistant.app
 
 only necessary for 10.9
 
@@ -117,12 +120,25 @@ Source: https://www.youtube.com/watch?v=5A5FG8EMEGc
 
 ## disable Mission Control animation
 This disables the swoosh animation when you start Mission Control.
+```
+$ defaults write com.apple.dock expose-animation-duration -float 0
+$ killall Dock
+```
 
-    $ defaults write com.apple.dock expose-animation-duration -float 0
-    $ killall Dock
+# Useful Apps
+## flux
+
+## buildin http server
+source: <http://osxdaily.com/2010/05/07/create-an-instant-web-server-via-terminal-command-line/>
+
+just run
+```
+$ python -m SimpleHTTPServer 4104
+```
+in your terminal. It will serve the files and directories in the current directory.
+
 
 # Peripherals
-
 ## Make the SuperDrive work on any Mac
 Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jedem-mac-verwenden
 
