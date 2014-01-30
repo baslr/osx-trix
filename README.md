@@ -3,17 +3,6 @@ osx-trix
 
 Compilation of Patches, Fixes and Tricks for Apples OS X Platform
 
-# Notes
-```
-$
-```
-means your normal user account.
-
-```
-#
-```
-means your root account.
-
 # Finder
 ## show 'Quit' in the Menubar
 This will enable CMD + Q and in the menubar Finder -> Quit Finder
@@ -40,7 +29,6 @@ testet for 10.4 - 10.9
 # Networking
 
 ## SMB (samba)
-### speedup connection
 This will speedup smb (samba) connections. Write a file (as root) with:
 
 ```
@@ -53,19 +41,23 @@ port445=no_netbios
 ```
 
 to
-```
-/private/etc/nsmb.conf
-```
+
+    /private/etc/nsmb.conf
 
 testet for 10.9
 
-## throttle TCP/IP Port throughput
-* (src|dst) means src-port xor dst-port
-* replace {port} with the port number you want to throttle
+# Editing Apple-Apps
 
-```
-# ipfw pipe 1 config bw 500KByte/s
-# ipfw add 1 pipe 1 (src|dst)-port {port}
-# ipfw delete 1
-```
-testet for 10.8 - 10.9
+## codesign
+As soon as you edit any .plist etc. in an original Apple-App it crashes after editing the .plist, because every App is signed by Apple. To sign the edited App (e.g *Boot Camp Assistant*) get root and type:
+
+    $ sudo codesign -fs - /Applications/Utilities/Boot\ Camp\ Assistant.app
+
+only necessary for 10.9
+
+## Make BootCamp Assistant create a bootable USB-drive on Mac's with optical drive.
+1. Edit the info.plist located in: */Applications/Utilities/Boot Camp Assistant.app/Contents*.
+2. Search for the string *<key>PreESDRequiredModels</key>* and paste your Model Identifier e.g. *		<string>MacBookPro7,2</string>* (You can find the Identifier in Mactracker or by left clicking the Apple while holding down the "alt" Key and clicking "Systeminformation")
+3. Copy your Boot-Rom-Version form the System-Profiler, which you start by left clicking the Apple while holding down the "alt" Key and clicking "Systeminformation" and paste it in the info.plist at *<key>DARequiredROMVersions</key>*
+4. To make your Mac boot from USB just delete the "Pre" from *<key>PreUSBBootSupportedModels</key>* and add your Model Identifier
+5. Codesign your BootCamp Assistant
