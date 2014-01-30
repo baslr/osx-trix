@@ -1,7 +1,9 @@
 osx-trix
 ========
 
-Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform
+Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform.
+
+**Pull Requests are welcome.**
 
 # Notes
 ```
