@@ -126,6 +126,9 @@ $ killall Dock
 ```
 
 # Useful Apps (free)
+## Boot Camp
+source: http://support.apple.com/kb/dl1638
+
 ## flux
 Changes the kelvin-temperature of your display when the sun goes down.
 
