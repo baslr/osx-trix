@@ -138,6 +138,12 @@ Transforms images to icons.
 ## TextMate
 Improved text displaying with syntax highlighting. It's the Notepad++ equal for OS X.
 
+## BetterTouchTool
+http://www.boastr.de
+> BetterTouchTool is a great, feature packed FREE app that allows you to configure many gestures for your Magic Mouse, Macbook Trackpad and Magic Trackpad. It also allows you to configure actions for keyboard shortcuts, normal mice and the Apple Remote. In addition to this it has an iOS companion App (BTT Remote) which can also be configured to control your Mac the way you want.
+
+> BetterTouchTool includes many goodies, like window snapping or an integrated window switcher.
+
 ## buildin http server
 source: <http://osxdaily.com/2010/05/07/create-an-instant-web-server-via-terminal-command-line/>
 
