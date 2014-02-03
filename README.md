@@ -167,3 +167,13 @@ Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jed
 # rm /Library/Preferences/com.apple.keyboardtype.plist
 ```
 then reboot
+
+# Clearing Caches
+## Removing User-Cache
+Just delete the content of the directory: *~/Library/Caches*
+
+## Clearing Font-Cache
+Source: http://www.extensis.com/support/de/knowledge-base/clearing-the-mac-os-x-font-cache/
+```
+atsutil databases -remove
+```
