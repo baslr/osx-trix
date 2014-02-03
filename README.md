@@ -175,5 +175,5 @@ Just delete the content of the directory: *~/Library/Caches*
 ## Clearing Font-Cache
 Source: http://www.extensis.com/support/de/knowledge-base/clearing-the-mac-os-x-font-cache/
 ```
-atsutil databases -remove
+# atsutil databases -remove
 ```
