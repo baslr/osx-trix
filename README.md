@@ -149,6 +149,10 @@ Transforms images to icons.
 ## TextMate
 Improved text displaying with syntax highlighting. It's the Notepad++ equal for OS X.
 
+## 0xED, HexEditor
+> 0xED is a native OS X hex editor based on the Cocoa framework.
+http://www.suavetech.com/0xed/
+
 ## BetterTouchTool
 http://www.boastr.de
 > BetterTouchTool is a great, feature packed FREE app that allows you to configure many gestures for your Magic Mouse, Macbook Trackpad and Magic Trackpad. It also allows you to configure actions for keyboard shortcuts, normal mice and the Apple Remote. In addition to this it has an iOS companion App (BTT Remote) which can also be configured to control your Mac the way you want.
