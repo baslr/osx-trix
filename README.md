@@ -57,6 +57,16 @@ This will prevent the Finder from creating .DS_Store over network connections.
     
 tested for 10.4 - 10.9
 
+# Testing your Memory
+Source: http://rampagedev.wordpress.com/os-x-tweaks/run-memtest-under-mac-os-x/
+## with normal RAM usage
+1. Download Memtest and install
+2. type *memtest all 2* this will test your whole unused memory 2 times
+
+## with minimal RAM usage (recommend)
+1. Download Memtest and install
+2. restart your Mac and hold down cmd+s while starting
+3. Type *memtest all 6* into prompt. To save the results into .txt file you need to mount your volume with *# /sbin/mount -uw /* and then run *memtest all 6 > output.txt* this will save all results the the root of the volume.
 
 # Networking
 
@@ -126,8 +136,8 @@ $ killall Dock
 ```
 
 # Useful Apps (free)
-## Boot Camp
-source: http://support.apple.com/kb/dl1638
+## Boot Camp 5
+http://support.apple.com/kb/dl1638
 
 ## flux
 Changes the kelvin-temperature of your display when the sun goes down.
@@ -143,6 +153,9 @@ http://www.boastr.de
 > BetterTouchTool is a great, feature packed FREE app that allows you to configure many gestures for your Magic Mouse, Macbook Trackpad and Magic Trackpad. It also allows you to configure actions for keyboard shortcuts, normal mice and the Apple Remote. In addition to this it has an iOS companion App (BTT Remote) which can also be configured to control your Mac the way you want.
 
 > BetterTouchTool includes many goodies, like window snapping or an integrated window switcher.
+
+## Memtest
+http://rampagedev.wordpress.com/os-x-tweaks/run-memtest-under-mac-os-x/
 
 ## buildin http server
 source: <http://osxdaily.com/2010/05/07/create-an-instant-web-server-via-terminal-command-line/>
