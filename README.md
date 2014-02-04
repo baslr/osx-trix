@@ -166,7 +166,7 @@ http://cdn.command-tab.com/2008/memtest_422.zip (direct)
 source: <http://osxdaily.com/2010/05/07/create-an-instant-web-server-via-terminal-command-line/>
 
 just run
-```h
+```
 $ python -m SimpleHTTPServer 4104
 ```
 in your terminal. It will serve the files and directories in the current directory.
