@@ -156,7 +156,7 @@ http://www.boastr.de
 > BetterTouchTool includes many goodies, like window snapping or an integrated window switcher.
 
 ## Memtest
-http://rampagedev.wordpress.com/os-x-tweaks/run-memtest-under-mac-os-x/
+http://cdn.command-tab.com/2008/memtest_422.zip (direct)
 
 ## buildin http server
 source: <http://osxdaily.com/2010/05/07/create-an-instant-web-server-via-terminal-command-line/>
