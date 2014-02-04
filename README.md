@@ -66,7 +66,8 @@ Source: http://rampagedev.wordpress.com/os-x-tweaks/run-memtest-under-mac-os-x/
 ## with minimal RAM usage (recommend)
 1. Download Memtest and install
 2. restart your Mac and hold down cmd+s while starting
-3. Type *memtest all 6* into prompt. To save the results into .txt file you need to mount your volume with *# /sbin/mount -uw /* and then run *memtest all 6 > output.txt* this will save all results the the root of the volume.
+3. Type *memtest all 6* into prompt. To save the results into .txt file you need to mount your volume with 
+*# /sbin/mount -uw /* and then run *memtest all 6 > output.txt* this will save all results the the root of the volume.
 
 # Networking
 
