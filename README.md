@@ -206,4 +206,4 @@ $ groups {username}
 ```
 The admin user has among others the group ``admin``
 
-The root user has among others the groups ``wheel`` ``daemon`` ``kmem`` ``sys``
+The root user has among others the groups ``wheel`` ``daemon`` ``kmem`` ``sys`` ``operator``
