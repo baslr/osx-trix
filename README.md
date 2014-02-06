@@ -144,8 +144,9 @@ Transforms images to icons.
 Improved text displaying with syntax highlighting. It's the Notepad++ equal for OS X.
 
 ## 0xED, HexEditor
-> 0xED is a native OS X hex editor based on the Cocoa framework.
 http://www.suavetech.com/0xed/
+> 0xED is a native OS X hex editor based on the Cocoa framework.
+
 
 ## BetterTouchTool
 http://www.boastr.de
