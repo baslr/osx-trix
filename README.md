@@ -6,15 +6,9 @@ Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform.
 **Pull Requests are welcome.**
 
 # Notes
-```
-$
-```
-means your normal user account.
+``$`` means your normal user account.
 
-```
-#
-```
-means your root account.
+``#`` means your root account.
 
 # Finder
 After any change you made here you have to type *killall Finder*
@@ -195,3 +189,21 @@ Source: http://www.extensis.com/support/de/knowledge-base/clearing-the-mac-os-x-
 ```
 # atsutil databases -remove
 ```
+
+## Clearing DNS-Cache
+Source: http://reviews.cnet.com/8301-13727_7-57493543-263/how-to-reset-the-dns-cache-in-os-x/
+
+```
+# dscacheutil -flushcache
+# killall -HUP mDNSResponder
+```
+
+# Terminal
+
+## show my group memberships
+```
+$ groups {username}
+```
+The admin user has among others the group ``admin``
+
+The root user has among others the groups ``wheel`` ``daemon`` ``kmem`` ``sys`` ``operator``
