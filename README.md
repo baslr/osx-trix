@@ -195,3 +195,11 @@ Source: http://www.extensis.com/support/de/knowledge-base/clearing-the-mac-os-x-
 ```
 # atsutil databases -remove
 ```
+
+## Clearing DNS-Cache
+Source: http://reviews.cnet.com/8301-13727_7-57493543-263/how-to-reset-the-dns-cache-in-os-x/
+
+```
+# dscacheutil -flushcache
+# killall -HUP mDNSResponder
+```
