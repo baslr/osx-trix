@@ -135,7 +135,19 @@ $ killall Dock
 http://support.apple.com/kb/dl1638
 
 ## flux
+http://justgetflux.com/
+
 Changes the kelvin-temperature of your display when the sun goes down.
+
+> Ever notice how people texting at night have that eerie blue glow?
+
+> Or wake up ready to write down the Next Great Idea, and get blinded by your computer screen?
+
+> During the day, computer screens look good—they're designed to look like the sun. But, at 9PM, 10PM, or 3AM, you probably shouldn't be looking at the sun.
+
+> f.lux fixes this: it makes the color of your computer's display adapt to the time of day, warm at night and like sunlight during the day.
+
+> It's even possible that you're staying up too late because of your computer. You could use f.lux because it makes you sleep better, or you could just use it just because it makes your computer look better.
 
 ## img2icns
 Transforms images to icons.
