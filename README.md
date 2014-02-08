@@ -152,6 +152,13 @@ Changes the kelvin-temperature of your display when the sun goes down.
 ## img2icns
 Transforms images to icons.
 
+## iTerm (Version 2)
+http://www.iterm2.com/
+
+> What is iTerm2?
+
+> iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with OS 10.5 (Leopard) or newer. Its focus is on performance, internationalization, and supporting innovative features that make your life better.
+
 ## TextMate
 http://macromates.com/download
 
