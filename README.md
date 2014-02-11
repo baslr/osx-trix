@@ -187,7 +187,7 @@ $ python -m SimpleHTTPServer 4104
 ```
 in your terminal. It will serve the files and directories in the current directory.
 
-## media player
+## VLC (media player)
 https://videolan.org
 
 > VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.
