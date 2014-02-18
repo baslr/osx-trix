@@ -192,6 +192,11 @@ https://videolan.org
 
 > VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.
 
+## KeepassX (secure password storage)
+https://www.keepassx.org/downloads/
+
+> KeePassX is an application for people with extremly high demands on secure personal data management. It has a light interface, is cross platform and published under the terms of the GNU General Public License.
+
 # Peripherals
 ## Make the SuperDrive work on any Mac
 Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jedem-mac-verwenden
