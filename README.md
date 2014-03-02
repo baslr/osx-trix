@@ -238,3 +238,10 @@ $ groups {username}
 The admin user has among others the group ``admin``
 
 The root user has among others the groups ``wheel`` ``daemon`` ``kmem`` ``sys`` ``operator``
+
+
+## getting Display EDID as hex
+```
+$ ioreg -l | grep -5 IODisplayEDID
+```
+The EDID informations are between &lt;&gt; and decoded in hex
