@@ -207,7 +207,8 @@ https://www.keepassx.org/downloads/
 Source: http://www.cnet.com/how-to/prevent-a-partition-from-mounting-in-os-x/
 
 1. Get the UUID from the Volume by running: *diskutil info {pathToVolume}*.
-2. Type: *# UUID=$NUMBER none hfs rw,noauto* for any other formatted drive you replace "hfs" with for example "FAT".
+2. *# pico /etc/fstab*
+3. Type: *# UUID=$NUMBER none hfs rw,noauto* for any other formatted drive you replace "hfs" with for example "FAT".
 
 ## Make the SuperDrive work on any Mac
 Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jedem-mac-verwenden
