@@ -204,6 +204,7 @@ https://www.keepassx.org/downloads/
 # Peripherals
 
 ## Prevent Volume from mounting
+Source: http://www.cnet.com/how-to/prevent-a-partition-from-mounting-in-os-x/
 
 1. Get the UUID from the Volume by running: *diskutil info {pathToVolume}*.
 2. Type: *# UUID=$NUMBER none hfs rw,noauto* for any other formatted drive you replace "hfs" with for example "FAT".
