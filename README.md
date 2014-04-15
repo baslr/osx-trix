@@ -202,6 +202,12 @@ https://www.keepassx.org/downloads/
 > KeePassX is an application for people with extremly high demands on secure personal data management. It has a light interface, is cross platform and published under the terms of the GNU General Public License.
 
 # Peripherals
+
+## Prevent Volume from mounting
+
+1. Get the UUID from the Volume by running: *diskutil info {pathToVolume}*.
+2. Type: *# UUID=$NUMBER none hfs rw,noauto* for any other formatted drive you replace "hfs" with for example "FAT".
+
 ## Make the SuperDrive work on any Mac
 Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jedem-mac-verwenden
 
