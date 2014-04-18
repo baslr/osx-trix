@@ -105,6 +105,10 @@ Source: <http://www.jeremycole.com/blog/2010/01/13/delayed-ack-in-os-x-is-incomp
 
 # Editing Apple-Apps
 
+## Enable diskutility debug-menu
+
+    $ defaults write com.apple.DiskUtility DUDebugMenuEnabled 1
+    
 ## codesign
 As soon as you edit any .plist etc. in an original Apple-App it crashes after editing the .plist, because every App is signed by Apple. To sign the edited App (e.g *Boot Camp Assistant*) get root and type:
 
@@ -198,6 +202,14 @@ https://www.keepassx.org/downloads/
 > KeePassX is an application for people with extremly high demands on secure personal data management. It has a light interface, is cross platform and published under the terms of the GNU General Public License.
 
 # Peripherals
+
+## Prevent Volume from mounting
+Source: http://www.cnet.com/how-to/prevent-a-partition-from-mounting-in-os-x/
+
+1. Get the UUID from the Volume by running: *diskutil info {pathToVolume}*.
+2. *# pico /etc/fstab*
+3. Type: *# UUID=$NUMBER none hfs rw,noauto* for any other formatted drive you replace "hfs" with for example "FAT".
+
 ## Make the SuperDrive work on any Mac
 Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jedem-mac-verwenden
 
