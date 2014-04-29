@@ -224,6 +224,14 @@ Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jed
 then reboot
 
 # Clearing Caches
+## Rebuild Kext-cache
+Source: http://forums.macrumors.com/archive/index.php/t-1654766.html
+This usually fixes slow boots ups.
+```
+# kextcache -system-prelinked-kernel
+# kextcache -system-caches
+```
+
 ## Clearing sandbox infos
 Empty the directory: *~/Library/Containers*
 
