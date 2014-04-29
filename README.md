@@ -247,6 +247,9 @@ Source: http://reviews.cnet.com/8301-13727_7-57493543-263/how-to-reset-the-dns-c
 ## Clearing User-temp
 Just delete the content of the directory: */private/var/folders*
 
+## Clearing applications-states
+Empty the directory *~/Library/Saved Application State*
+
 # Terminal
 
 ## show my group memberships
