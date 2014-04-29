@@ -224,6 +224,9 @@ Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jed
 then reboot
 
 # Clearing Caches
+## Clearing sandbox infos
+Empty the directory: *~/Library/Containers*
+
 ## Removing User-Cache
 Just delete the content of the directory: *~/Library/Caches*
 
@@ -242,7 +245,7 @@ Source: http://reviews.cnet.com/8301-13727_7-57493543-263/how-to-reset-the-dns-c
 ```
 
 ## Clearing User-temp
-Just delete the content of the directory: /private/var/folders/
+Just delete the content of the directory: */private/var/folders*
 
 # Terminal
 
