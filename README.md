@@ -241,6 +241,9 @@ Source: http://reviews.cnet.com/8301-13727_7-57493543-263/how-to-reset-the-dns-c
 # killall -HUP mDNSResponder
 ```
 
+## Clearing User-temp
+Just delete the content of the directory: /private/var/folders/
+
 # Terminal
 
 ## show my group memberships
