@@ -226,7 +226,8 @@ then reboot
 # Clearing Caches
 ## Rebuild Kext-cache
 Source: http://forums.macrumors.com/archive/index.php/t-1654766.html
-This usually fixes slow boots ups.
+
+This usually fixes slow boot ups.
 ```
 # kextcache -system-prelinked-kernel
 # kextcache -system-caches
