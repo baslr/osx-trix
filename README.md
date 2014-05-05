@@ -224,6 +224,7 @@ Source: http://www.maclife.de/tipps-tricks/hardware/externes-superdrive-fast-jed
 then reboot
 
 # Clearing Caches
+None of these steps will harm your settings or something like that. Everything listet below is to delete temporary files which can removed without harming the System or other applications.
 ## Rebuild Kext-cache
 Source: http://forums.macrumors.com/archive/index.php/t-1654766.html
 
@@ -233,7 +234,7 @@ This usually fixes slow boot ups.
 # kextcache -system-caches
 ```
 
-## Clearing sandbox infos
+## Clearing sandbox containers
 Empty the directory: *~/Library/Containers*
 
 ## Removing User-Cache
