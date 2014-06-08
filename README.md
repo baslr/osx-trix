@@ -19,6 +19,23 @@ This will enable CMD + Q and in the menubar Finder -> Quit Finder
 
 tested for 10.9
 
+## show extended save dialog via default
+This will always bring up the extended save dialog in all applications.
+
+```
+$ defaults write -g NSNavPanelExpandedStateForSaveMode -bool TRUE
+```
+You need to restart your machine afterwards.
+
+
+## show extended print dialog via default
+This will always bring up the extended print dialog in all applications.
+
+```
+$ defaults write -g PMPrintingExpandedStateForPrint -bool TRUE
+```
+You need to restart your machine afterwards.
+
 ## show hidden files in Finder
 This wil show all files in the Finder.
 
