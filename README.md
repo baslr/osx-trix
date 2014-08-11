@@ -280,6 +280,7 @@ Empty the directory *~/Library/Saved Application State*
 # Terminal
 
 ## send display to sleep
+works since 10.9
 ```
 $ pmset displaysleepnow
 ```
