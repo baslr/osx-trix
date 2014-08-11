@@ -279,6 +279,11 @@ Empty the directory *~/Library/Saved Application State*
 
 # Terminal
 
+## send display to sleep
+```
+$ pmset displaysleepnow
+```
+
 ## show my group memberships
 ```
 $ groups {username}
