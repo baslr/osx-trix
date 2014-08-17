@@ -252,6 +252,8 @@ This usually fixes slow boot ups.
 ```
 
 ## Clearing sandbox containers
+Note: this will delete all configs from sandboxed apps
+
 Empty the directory: *~/Library/Containers*
 
 ## Removing User-Cache
