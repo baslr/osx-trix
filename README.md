@@ -281,7 +281,7 @@ Empty the directory *~/Library/Saved Application State*
 
 
 # disable bluetooth via terminal
-
+Source: https://discussions.apple.com/message/12448781
 ```
 #set bluetooth pref to off
 defaults write /Library/Preferences/com.apple.Bluetooth.plist ControllerPowerState 0
