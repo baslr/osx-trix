@@ -300,7 +300,7 @@ launchctl load /System/Library/LaunchDaemons/com.apple.blued.plist
 
 #restart blued daemon
 launchctl start com.apple.blued
-
+```
 
 # Terminal
 
