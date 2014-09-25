@@ -279,6 +279,29 @@ Just delete the content of the directory: */private/var/folders*
 ## Clearing application-states
 Empty the directory *~/Library/Saved Application State*
 
+
+# disable bluetooth via terminal
+
+```
+#set bluetooth pref to off
+defaults write /Library/Preferences/com.apple.Bluetooth.plist ControllerPowerState 0
+
+#set bluetooth pref to on 
+defaults write /Library/Preferences/com.apple.Bluetooth.plist ControllerPowerState 1
+
+#kill the bluetooth server process 
+killall blued
+
+#unload the daemon 
+launchctl unload /System/Library/LaunchDaemons/com.apple.blued.plist
+
+#reload the daemon
+launchctl load /System/Library/LaunchDaemons/com.apple.blued.plist
+
+#restart blued daemon
+launchctl start com.apple.blued
+
+
 # Terminal
 
 ## send display to sleep
