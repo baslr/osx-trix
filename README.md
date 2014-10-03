@@ -151,6 +151,12 @@ $ defaults write com.apple.dock expose-animation-duration -float 0
 $ killall Dock
 ```
 
+## Install 10.x.app to USB thumb drive
+
+```
+10.x.app/Contents/Resources/createinstallmedia --volume /Volumes/{yourVolume} --applicationpath 10.x.app --nointeraction
+```
+
 # Useful Apps (free)
 ## Boot Camp 5
 http://support.apple.com/kb/dl1638
