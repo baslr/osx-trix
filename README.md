@@ -152,6 +152,7 @@ $ killall Dock
 ```
 
 ## Install 10.x.app to USB thumb drive
+source: http://coolestguidesontheplanet.com/making-a-boot-usb-disk-of-osx-10-9-mavericks/
 
 ```
 10.x.app/Contents/Resources/createinstallmedia --volume /Volumes/{yourVolume} --applicationpath 10.x.app --nointeraction
