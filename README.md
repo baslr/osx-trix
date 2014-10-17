@@ -151,6 +151,13 @@ $ defaults write com.apple.dock expose-animation-duration -float 0
 $ killall Dock
 ```
 
+## disable Launchpad  animations
+source: http://apple.stackexchange.com/questions/117223/how-do-i-disable-launchpad-animation-on-mac
+```
+$ defaults write com.apple.dock springboard-page-duration -float 0
+$ killall Dock
+```
+
 ## Install 10.x.app to USB thumb drive
 source: http://coolestguidesontheplanet.com/making-a-boot-usb-disk-of-osx-10-9-mavericks/
 
