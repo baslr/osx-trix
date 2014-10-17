@@ -68,6 +68,15 @@ This will prevent the Finder from creating .DS_Store over network connections.
     
 tested for 10.4 - 10.9
 
+# Preparing your System for HDD + SSD usage
+This will disable Spotlight on your selected Drive and it will stop spinning after 1 minute (for this the option must be first activated in energy preferences). Useful for Macs with HDD and SSD.
+```
+# mdutil -d /Volumes/diskX
+# mdutil -i off /Volumes/diskX
+# pmset -a disksleep 1
+```
+
+
 # Testing your Memory
 Source: http://rampagedev.wordpress.com/os-x-tweaks/run-memtest-under-mac-os-x/
 ## with normal RAM usage
