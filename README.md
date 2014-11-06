@@ -174,6 +174,17 @@ source: http://coolestguidesontheplanet.com/making-a-boot-usb-disk-of-osx-10-9-m
 10.x.app/Contents/Resources/createinstallmedia --volume /Volumes/{yourVolume} --applicationpath 10.x.app --nointeraction
 ```
 
+## get TeamViewer.app from Teamvier.dmg
+
+* copy `Install TeamViewer.pkg` to a writeable place
+* `cd` to the directory where `Install TeamViewer.pkg` is located
+* exec `pkgutil --expand Install\ TeamViewer.pkg viewer` this will extract the pkg
+* exec `cd viewer/TeamViewerApp.pkg`
+* exec `mv Payload Payload.gz` rename Payload to Payload.gz
+* exec `gunzip Payload.gz` gunzip the Payload
+* exec `cpio -i -F Payload` finaly unpack the App
+* exec `mv TeamViewer.app ~/Downloads` move the extracted App to the Downloads directory
+
 # Useful Apps (free)
 ## Boot Camp 5
 http://support.apple.com/kb/dl1638
