@@ -175,6 +175,7 @@ source: http://coolestguidesontheplanet.com/making-a-boot-usb-disk-of-osx-10-9-m
 ```
 
 ## get TeamViewer.app from Teamvier.dmg
+<https://apple.stackexchange.com/questions/15658/how-can-i-open-a-pkg-file-manually> <http://www.linuxquestions.org/questions/linux-newbie-8/how-to-extract-a-ascii-cpio-archive-svr4-with-no-crc-4175436617/>
 
 * copy `Install TeamViewer.pkg` to a writeable place
 * `cd` to the directory where `Install TeamViewer.pkg` is located
