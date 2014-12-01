@@ -363,7 +363,7 @@ The EDID informations are between &lt;&gt; and decoded in hex
 # Performance issues
 
 ## Finder is slow on user actions / coreservicesd high cpu usage
-<http://blog.hsoi.com/2014/02/25/my-slow-mac-mavericks-coreservicesd-iconservicesagent-and-how-fs_usage-saved-me/>
+source: <http://blog.hsoi.com/2014/02/25/my-slow-mac-mavericks-coreservicesd-iconservicesagent-and-how-fs_usage-saved-me/>
 
 see which app is called do get icon information
 
