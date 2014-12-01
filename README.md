@@ -359,3 +359,12 @@ The root user has among others the groups ``wheel`` ``daemon`` ``kmem`` ``sys`` 
 $ ioreg -l | grep -5 IODisplayEDID
 ```
 The EDID informations are between &lt;&gt; and decoded in hex
+
+# Performance issues
+
+## Finder is slow on user actions / coreservicesd high cpu usage
+<http://blog.hsoi.com/2014/02/25/my-slow-mac-mavericks-coreservicesd-iconservicesagent-and-how-fs_usage-saved-me/>
+
+see which app is called do get icon information
+
+    # fs_usage -f pathname -w com.apple.IconServicesAgent | grep open
