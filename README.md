@@ -208,6 +208,10 @@ Changes the kelvin-temperature of your display when the sun goes down.
 ## img2icns
 Transforms images to icons.
 
+## Rufus
+Create bootable USB-drives form any .iso.
+https://rufus.akeo.ie/
+
 ## iTerm (Version 2)
 http://www.iterm2.com/
 
