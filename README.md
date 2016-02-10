@@ -91,7 +91,10 @@ Source: http://rampagedev.wordpress.com/os-x-tweaks/run-memtest-under-mac-os-x/
 
 # Networking
 
-## SMB (samba)
+## SMB / CIFS (samba)
+
+generally use `cifs://` instead of `smb://` <https://discussions.apple.com/thread/6635652?start=0&tstart=0>
+
 ### speedup connection
 This will speedup smb (samba) connections. Write a file (as root) with:
 
