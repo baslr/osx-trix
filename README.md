@@ -375,3 +375,10 @@ source: <http://blog.hsoi.com/2014/02/25/my-slow-mac-mavericks-coreservicesd-ico
 see which app is called do get icon information
 
     # fs_usage -f pathname -w com.apple.IconServicesAgent | grep open
+
+
+# Security
+## Configuring System Integrity Protection
+<https://developer.apple.com/library/mac/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html>
+reboot with `Cmd + R`, open up terminal and type `csrutil enable` to enable and `csrutil disable` to disable. Status via `csrutil status`
+
