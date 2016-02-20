@@ -179,6 +179,7 @@ source: http://coolestguidesontheplanet.com/making-a-boot-usb-disk-of-osx-10-9-m
 
 ## Install 10.11 installer to USB thumb drive
 source: http://www.macworld.com/article/2981585/operating-systems/how-to-make-a-bootable-os-x-10-11-el-capitan-installer-drive.html
+
 `/Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/{yourVolume}/ --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app/ --nointeraction`
 
 ## get TeamViewer.app from Teamvier.dmg
