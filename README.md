@@ -1,4 +1,4 @@
-osx-trix TROLLO
+osx-trix
 ========
 
 Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform.
