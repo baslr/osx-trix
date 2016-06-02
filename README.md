@@ -10,8 +10,8 @@ Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform.
 
 ``#`` means your root account.
 
-## [Finder](#finder)
-## [Networking](#networking)
+## [Finder related](#finder)
+## [Networking related](#networking)
 
 
 # Finder
