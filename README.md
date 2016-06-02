@@ -13,7 +13,7 @@ Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform.
 ## [Finder related](#finder)
 ## [Networking related](#networking)
 ## [Animation related](#animations)
-## [Free Apps](#useful apps (free))
+## [Free Apps](#useful-apps-free)
 
 # Finder
 After any change you made here you have to type *killall Finder*
