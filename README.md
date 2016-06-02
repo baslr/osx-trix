@@ -14,6 +14,8 @@ Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform.
 ## [Networking related](#networking)
 ## [Animation related](#animations)
 ## [Free Apps](#useful-apps-free)
+## [Terminal realted](#terminal)
+## [git related](#git)
 
 # Finder
 After any change you made here you have to type *killall Finder*
@@ -392,3 +394,9 @@ see which app is called do get icon information
 <https://developer.apple.com/library/mac/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html>
 reboot with `Cmd + R`, open up terminal and type `csrutil enable` to enable and `csrutil disable` to disable. Status via `csrutil status`
 
+# git
+## detect case in filename change
+
+    $ git config core.ignorecase false
+
+now git detects casechanges
