@@ -10,6 +10,10 @@ Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform.
 
 ``#`` means your root account.
 
+## [Finder](#Finder)
+## [Networking](#Networking)
+
+
 # Finder
 After any change you made here you have to type *killall Finder*
 ## show 'Quit' in the Menubar
