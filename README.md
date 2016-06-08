@@ -364,6 +364,14 @@ works since 10.9
 $ pmset displaysleepnow
 ```
 
+## remove file secure
+
+Source: http://www.macworld.com/article/3005796/operating-systems/how-to-replace-secure-empty-trash-in-os-x-el-capitan.html
+
+    srm -zv /{path-to-file}
+
+
+
 ## show my group memberships
 ```
 $ groups {username}
