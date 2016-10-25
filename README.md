@@ -14,7 +14,7 @@ Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform.
 ## [Networking related](#networking)
 ## [Animation related](#animations)
 ## [Free Apps](#useful-apps-free)
-## [Terminal realted](#terminal)
+## [Terminal related](#terminal)
 ## [git related](#git)
 
 # Finder
