@@ -11,7 +11,7 @@ Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform.
 ``#`` means your root account.
 
 ## [Finder related](#finder)
-## [Display](#display)
+## [Display related](#display)
 ## [Networking related](#networking)
 ## [Animation related](#animations)
 ## [Free Apps](#useful-apps-free)
