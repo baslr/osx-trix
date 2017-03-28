@@ -11,6 +11,7 @@ Compilation of Patches, Fixes, Tips and Tricks for Apples OS X Platform.
 ``#`` means your root account.
 
 ## [Finder related](#finder)
+## [Display](#display)
 ## [Networking related](#networking)
 ## [Animation related](#animations)
 ## [Free Apps](#useful-apps-free)
@@ -83,7 +84,6 @@ This will disable Spotlight on your selected Drive and it will stop spinning aft
 # pmset -a disksleep 1
 ```
 
-
 # Testing your Memory
 Source: http://rampagedev.wordpress.com/os-x-tweaks/run-memtest-under-mac-os-x/
 ## with normal RAM usage
@@ -95,6 +95,32 @@ Source: http://rampagedev.wordpress.com/os-x-tweaks/run-memtest-under-mac-os-x/
 2. restart your Mac and hold down cmd+s while starting
 3. Type *memtest all 6* into prompt. To save the results into .txt file you need to mount your volume with 
 *# /sbin/mount -uw /* and then run *memtest all 6 > output.txt* this will save all results to the root of the volume.
+
+# Display
+Source: https://pikeralpha.wordpress.com/2017/01/30/4398/
+
+enable Night Shift on older machines.
+```
+
+# cd /System/Library/PrivateFrameworks/CoreBrightness.framework/Versions/Current
+# nm CoreBrightness |grep _ModelMinVersion
+000000000001e260 S _ModelMinVersion
+```
+0x1e260 is the starting position add 4 to the offset to access all machine types. offset 0 is MacBookPro, followed by iMac, Macmini, MacBookAir, MacPro and MacBook. We use node to rewrite the CoreBrightness binary for the MacBook Pro (offset 0).
+```
+# node
+> const a = fs.readFileSync('CoreBrightness');
+> a[0x1e260]
+9
+> a[0x1e260] = 8;
+> fs.writeFileSync('CoreBrightness', a);
+> .exit
+```
+Now we resign the binary:
+```
+# codesign -f -s - /System/Library/PrivateFrameworks/CoreBrightness.framework/Versions/Current/CoreBrightness
+```
+Don't forget to reboot your machine.
 
 # Networking
 
