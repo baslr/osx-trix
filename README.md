@@ -241,6 +241,12 @@ Source: http://reviews.cnet.com/8301-13727_7-57493543-263/how-to-reset-the-dns-c
 # killall -HUP mDNSResponder
 ```
 
+## Rebuild Sportlight index
+
+Open the system preferences go to Spotlight and add your whole volume to the exclude list. Then wait a few seconds and delete it again. Open Spotlight to see the indexing-process.
+
+
+
 # Terminal
 
 ## show my group memberships
