@@ -382,6 +382,11 @@ launchctl load /System/Library/LaunchDaemons/com.apple.blued.plist
 launchctl start com.apple.blued
 ```
 
+## Rebuild Spotlight index
+
+Open the system preferences go to Spotlight and add your whole volume to the exclude list. Then wait a few seconds and delete it again. Open Spotlight to see the indexing-process.
+
+
 # Terminal
 
 ## send display to sleep
