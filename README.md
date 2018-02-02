@@ -165,6 +165,13 @@ Source: <http://www.jeremycole.com/blog/2010/01/13/delayed-ack-in-os-x-is-incomp
 # echo 'sysctl -w net.inet.tcp.delayed_ack=0' >> /etc/sysctl.conf
 ```
 
+## keep bluetooth disable on startup
+Source: http://www.kernelcrash.com/blog/os-x-disabling-bluetooth/2007/11/12/
+```
+# defaults write /Library/Preferences/com.apple.Bluetooth “ControllerPowerState” -bool FALSE
+```
+
+
 # Editing Apple-Apps
 
 ## Enable diskutility debug-menu
